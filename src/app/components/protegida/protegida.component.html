@@ -1,0 +1,6 @@
+<h1>Perfil del usurio autenticado</h1>
+<hr>
+
+<pre *ngIf="auth.userProfile$| async as profile">
+    {{profile | json}}
+</pre>
