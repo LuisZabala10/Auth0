@@ -23,7 +23,7 @@ export class AuthService {
       domain: "dev-k3br-6lg.us.auth0.com",
       // domain: "dev-c-s9v8d0.us.auth0.com/login",
       // client_id: "Zg76Gme3mC52BwCv4G5yNNe8nmUnwInX", // este es mi cliend_id
-      client_id: "euTblI5dvUpN8nDCmdPhqbCXxk9yplgB",
+      client_id: "",
  
       redirect_uri: `${window.location.origin}`,
       // sso: true, eso es una prueba no para que es
@@ -130,7 +130,7 @@ export class AuthService {
       // Call method to log out
       client.logout({
         //        client_id: "Zg76Gme3mC52BwCv4G5yNNe8nmUnwInX",  // OJO ES EL MIO
-        client_id: "euTblI5dvUpN8nDCmdPhqbCXxk9yplgB",
+        client_id: "",
         returnTo: `${window.location.origin}`,
       });
     });
